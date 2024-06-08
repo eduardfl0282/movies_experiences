@@ -1,0 +1,479 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundal întunecat */
+    color: #e5e5e5; /* Text deschis */
+}
+
+header {
+    background-color: #141414; /* Nav-bar întunecat */
+    color: #ffffff;
+    height: 5vh; /* Înălțime pentru bara de navigare */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #e5e5e5; /* Text deschis */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: none; /* Elimină linia de sub text la hover */
+}
+
+footer {
+    background-color: #141414; /* Footer întunecat */
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 0;
+    height: 25px; /* Înălțime pentru footer */
+}
+
+/* Home Page Styles */
+#home-page {
+    background-color: #121212;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Asigură înălțimea ecranului complet */
+}
+
+#home-page main {
+    text-align: center;
+    flex: 1; /* Ocupă restul spațiului */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px; /* Compensează pentru înălțimea footer-ului */
+    overflow-y: auto; /* Permite scroll-ul vertical */
+}
+
+#home-page .spacer {
+    height: 2.5%; /* Ajustare pentru spațiere */
+}
+
+#home-page .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Spațiere între secțiuni */
+    padding: 2rem; /* Padding pentru a adăuga spațiere internă */
+}
+
+#home-page #trailer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page #trailer-section iframe {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+#home-page #home-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-page .carousel-container {
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-page .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+
+#home-page .carousel img {
+    width: 25%; /* Fiecare imagine ocupă 25% din lățimea caruselului */
+    margin-right: 5px; /* Spațiu între imagini */
+    transition: transform 0.5s ease;
+}
+
+#home-page .carousel-container button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+#home-page .carousel-container button.prev {
+    left: 10px;
+}
+
+#home-page .carousel-container button.next {
+    right: 10px;
+}
+
+/* Movies Page Styles */
+#movies-page {
+    background-color: #121212;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Asigură înălțimea ecranului complet */
+}
+
+#movies-page main {
+    text-align: center;
+    flex: 1; /* Ocupă restul spațiului */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px; /* Compensează pentru înălțimea footer-ului */
+    overflow-y: auto; /* Permite scroll-ul vertical */
+}
+
+#movies-page .spacer {
+    height: 2.5%; /* Ajustare pentru spațiere */
+}
+
+#movies-page .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Spațiere între secțiuni */
+    padding: 2rem; /* Padding pentru a adăuga spațiere internă */
+}
+
+#movies-page .carousel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#movies-page .carousel-header {
+    margin-bottom: 1rem;
+}
+
+#movies-page .carousel-container {
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#movies-page .carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+
+#movies-page .carousel img {
+    width: 25%; /* Fiecare imagine ocupă 25% din lățimea caruselului */
+    margin-right: 5px; /* Spațiu între imagini */
+    transition: transform 0.5s ease;
+}
+
+#movies-page .carousel-container button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+#movies-page .carousel-container button.prev {
+    left: 10px;
+}
+
+#movies-page .carousel-container button.next {
+    right: 10px;
+}
+
+/* Chat Page Styles */
+#chat-page {
+    background-color: #121212;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Asigură înălțimea ecranului complet */
+}
+
+#chat-page main {
+    text-align: center;
+    flex: 1; /* Ocupă restul spațiului */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px; /* Compensează pentru înălțimea footer-ului */
+    overflow-y: auto; /* Permite scroll-ul vertical */
+}
+
+#chat-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: calc(70vh - 25px); /* Ajustare pentru a se potrivi cu footer-ul */
+    padding: 1rem;
+    margin-bottom: 25px; /* Spațiu pentru footer */
+}
+
+#chat-section, #recommendations-section {
+    width: 45%; /* Fiecare secțiune ocupă 45% din lățime */
+    height: 100%;
+    background-color: #1c1c1c;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-section h2, #recommendations-section h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+#chat-box, #recommendations-box {
+    flex: 1;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-y: auto; /* Permite scroll-ul intern */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spațiere între mesaje */
+}
+
+.message, .recommendation {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    max-width: 70%;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.message.me {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.message.other {
+    background-color: #f1f1f1;
+    color: #000;
+    align-self: flex-start;
+}
+
+.recommendation {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+#chat-input {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#chat-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#chat-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+}
+
+#recommend-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+}
+
+/* Stiluri pentru modal */
+.modal {
+    display: none; /* Ascuns implicit */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2c2c2c;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: auto; /* Se ajustează automat */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label, 
+.modal-content input, 
+.modal-content textarea, 
+.modal-content button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #121212; /* Fundal întunecat */
+}
+
+.modal-content input, 
+.modal-content textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.modal-content button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.close-btn, .close-recommend-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus,
+.close-recommend-btn:hover,
+.close-recommend-btn:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#user-search-container {
+    display: flex;
+    align-items: center;
+}
+
+#user-search {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 0.5rem;
+    background-color: #121212;
+    color: white;
+}
+
+#add-user-btn {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#user-list {
+    margin-top: 1rem;
+}
+
+/* Grupuri */
+.group-section {
+    margin-top: 20px;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+}
+
+.group-section h3 {
+    color: white;
+}
+
+.group-chat-box {
+    height: 35vh;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-y: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spațiere între mesaje */
+}
+
+.group-chat-input {
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #121212;
+    color: white;
+}
+
+.delete-group-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}

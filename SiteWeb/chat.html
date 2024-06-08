@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Movie Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="chat-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="chat-container">
+            <!-- Zona de chat pentru recomandări -->
+            <section id="recommendations-section">
+                <h2>Recomandări</h2>
+                <div id="recommendations-box">
+                    <!-- Aici vor fi afișate recomandările -->
+                </div>
+                <button id="recommend-btn">Recommend</button>
+            </section>
+            <!-- Zona de chat global -->
+            <section id="chat-section">
+                <div id="chat-header">
+                    <h2 id="chat-with">Global Chat</h2>
+                    <div id="chat-buttons">
+                        <button id="create-group-btn">Create Group</button>
+                    </div>
+                </div>
+                <div id="chat-box">
+                    <!-- Aici vor fi afișate mesajele -->
+                </div>
+                <input type="text" id="chat-input" placeholder="Type a message...">
+            </section>
+        </div>
+        <!-- Secțiune pentru grupuri -->
+        <section id="groups-container">
+            <!-- Aici vor fi afișate grupurile -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Recommendations</p>
+    </footer>
+
+    <!-- Fereastră modal pentru creare grup -->
+    <div id="create-group-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Create a New Group</h2>
+            <form id="create-group-form">
+                <label for="group-name">Group Name:</label>
+                <input type="text" id="group-name" name="group-name" required>
+
+                <label for="group-description">Description:</label>
+                <textarea id="group-description" name="group-description" required></textarea>
+
+                <label for="group-users">Add Users:</label>
+                <div id="user-search-container">
+                    <input type="text" id="user-search" placeholder="Search users...">
+                    <button type="button" id="add-user-btn">+</button>
+                </div>
+                <div id="user-list"></div>
+
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Fereastră modal pentru recomandare -->
+    <div id="recommend-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-recommend-btn">&times;</span>
+            <h2>Recommend a Movie</h2>
+            <form id="recommend-form">
+                <label for="movie-title-recommend">Movie Title:</label>
+                <input type="text" id="movie-title-recommend" name="movie-title-recommend" required>
+
+                <label for="trailer-link">Trailer Link:</label>
+                <input type="url" id="trailer-link" name="trailer-link" required>
+
+                <label for="short-message">My opinion:</label>
+                <textarea id="short-message" name="short-message" required></textarea>
+
+                <label for="viewed-at">Viewed On:</label>
+                <input type="text" id="viewed-at" name="viewed-at" required>
+
+                <label for="rating">Rating 0 to 10:</label>
+                <input type="number" id="rating" name="rating" min="1" max="10" required>
+
+                <button type="submit">Recommend</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

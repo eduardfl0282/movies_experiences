@@ -1,0 +1,66 @@
+<!-- commit -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Movie Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <!-- Secțiunea pentru trailer aleatoriu -->
+            <section id="trailer-section">
+                <iframe id="trailer-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <!-- Spațiere -->
+            <div class="spacer"></div>
+            <!-- Secțiunea pentru carusel -->
+            <section id="home-carousel" class="carousel-section">
+                <div class="carousel-container">
+                    <button class="prev" onclick="moveCarousel('prev')">&#10094;</button>
+                    <div class="carousel">
+                        <!-- Imaginile vor fi adăugate dinamic -->
+                    </div>
+                    <button class="next" onclick="moveCarousel('next')">&#10095;</button>
+                </div>
+            </section>
+            <!-- Spațiere -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Recommendations</p>
+    </footer>
+
+    <!-- Modal pentru detalii film -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="movie-title"></h2>
+            <div>
+                <button id="like-btn">Like</button>
+                <button id="dislike-btn">Dislike</button>
+                <span id="movie-rating">10/10</span>
+            </div>
+            <div id="movie-comments">
+                <h3>Comments</h3>
+                <div id="comments-list"></div>
+                <input type="text" id="comment-input" placeholder="Add a comment...">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

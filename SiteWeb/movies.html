@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - Movie Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="movies-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Secțiunea pentru carusel Drama -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Drama</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Drama')">&#10094;</button>
+                <div class="carousel" data-genre="Drama">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Drama')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Crime -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Crime</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Crime')">&#10094;</button>
+                <div class="carousel" data-genre="Crime">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Crime')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Action -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Action</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Action')">&#10094;</button>
+                <div class="carousel" data-genre="Action">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Action')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Biography -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Biography</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Biography')">&#10094;</button>
+                <div class="carousel" data-genre="Biography">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Biography')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Fantasy -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Fantasy</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Fantasy')">&#10094;</button>
+                <div class="carousel" data-genre="Fantasy">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Fantasy')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Sci-Fi -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Sci-Fi</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Sci-Fi')">&#10094;</button>
+                <div class="carousel" data-genre="Sci-Fi">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Sci-Fi')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Thriller -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Thriller</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Thriller')">&#10094;</button>
+                <div class="carousel" data-genre="Thriller">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Thriller')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Comedy -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Comedy</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Comedy')">&#10094;</button>
+                <div class="carousel" data-genre="Comedy">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Comedy')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel Animation -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>Animation</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'Animation')">&#10094;</button>
+                <div class="carousel" data-genre="Animation">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'Animation')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+        <!-- Secțiunea pentru carusel War -->
+        <section class="carousel-section genre-carousel">
+            <div class="carousel-header">
+                <h2>War</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="prev" onclick="moveCarousel('prev', 'War')">&#10094;</button>
+                <div class="carousel" data-genre="War">
+                    <!-- Imaginile vor fi adăugate dinamic -->
+                </div>
+                <button class="next" onclick="moveCarousel('next', 'War')">&#10095;</button>
+            </div>
+        </section>
+        <!-- Spațiere -->
+        <div class="spacer"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Recommendations</p>
+    </footer>
+
+    <!-- Modal pentru detalii film -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="movie-title"></h2>
+            <div>
+                <button id="like-btn">Like</button>
+                <button id="dislike-btn">Dislike</button>
+                <span id="movie-rating">10/10</span>
+            </div>
+            <div id="movie-comments">
+                <h3>Comments</h3>
+                <div id="comments-list"></div>
+                <input type="text" id="comment-input" placeholder="Add a comment...">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
